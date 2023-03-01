@@ -16,7 +16,7 @@
   become: yes
   become_user: root
   get_url:
-    url: "https://github.com/goharbor/harbor/releases/download/{{ harbor_version }}-rc3/harbor-offline-installer-{{ harbor_version }}-rc3.tgz"
+    url: "https://github.com/goharbor/harbor/releases/download/{{ harbor_version }}/harbor-offline-installer-{{ harbor_version }}.tgz"
     dest: "{{ harbor_config_dir }}/harbor.tgz"
     mode: 0755
     owner: root

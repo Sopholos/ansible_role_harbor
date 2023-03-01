@@ -1,4 +1,8 @@
 ---
+- name: Install Prerequisites
+  include_tasks: prepare.yml
+  tags: prerequisites
+
 - name: Install Harbor
   include_tasks: install.yml
   tags: install
